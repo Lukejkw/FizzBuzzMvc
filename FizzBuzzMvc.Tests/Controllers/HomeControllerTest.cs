@@ -47,6 +47,7 @@ namespace FizzBuzzMvc.Tests.Controllers
             Assert.AreEqual("1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 FizzBuzz", view.ViewBag.Message);
         }
 
+        [TestMethod]
         public void Index_Should_Return_Correct_Sequence_When_No_Param_Parsed()
         {
             var controller = new HomeController();
